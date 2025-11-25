@@ -39,7 +39,7 @@ function ProjectCard({ title, description, image, url, githubLink }) {
 
       <Box
         sx={{
-          height: 300,
+          // height: 400,
           position: "relative",
           zIndex: 3,
           padding: "20px",
@@ -52,24 +52,25 @@ function ProjectCard({ title, description, image, url, githubLink }) {
          
         }}
       >
-        <Box sx={{ height: 350 }}>
+        <Box >
           <Typography variant="h5" sx={{ fontWeight: "bold" }}>
             {title}
-          </Typography>
+          </Typography>  </Box>
           <Box
             sx={{
-              mt: 5,
+              maxHeight:300,
+              mt: "auto",
               overflow: "scroll",
-              mb: 1,
+              mb: "auto",
             }}
           >
             <Typography variant="body2" sx={{ mb: 2 }}>
               {description}
             </Typography>
           </Box>
-        </Box>
+      
 
-        <Box mb={"10px"}>
+        <Box mb={"100px"}>
           {url && (
             <Button
               variant="outlined"
