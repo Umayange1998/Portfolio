@@ -3,9 +3,11 @@
 A modern, fully responsive developer portfolio website built with React, Material UI (MUI), and EmailJS.
 This portfolio showcases my skills, projects, experience, resume, and ways to contact me — wrapped in a clean & elegant UI.
 
-🔗 Live Demo
+## 🔗 Live Demo
 
-👉 Coming Soon 
+<a href="[https://umayange1998.github.io/personal-website/](https://umayange-gamachchi.netlify.app/)" target="_blank" rel="noopener noreferrer">
+  Visit Live Website
+</a>
 
 🚀 Features
 
