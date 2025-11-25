@@ -49,8 +49,8 @@ function MultipleItems() {
 
   if (!mounted) return null;
   return (
-    <div >
-      <Slider  key={`${projects.length}-${width}`} {...settings}>
+    <div>
+      <Slider key={`${projects.length}-${width}`} {...settings}>
         {projects.map((p) => (
           <div key={p._id}>
             <ProjectCard
