@@ -1,5 +1,6 @@
-import { Box, Divider, Grid, Typography } from "@mui/material";
+import { Box, Button, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
+import VerticalAlignBottomIcon from "@mui/icons-material/VerticalAlignBottom";
 
 function Resume() {
   return (
@@ -8,8 +9,8 @@ function Resume() {
       spacing={2}
       height={{ md: "100vh" }}
       sx={{ width: "100%" }}
-      //   display={'flex'}
-      //   justifyContent="center"
+      display={"flex"}
+      justifyContent="center"
       my={15}
     >
       <Grid
@@ -31,189 +32,235 @@ function Resume() {
           My Resume
         </Typography>
       </Grid>
-
       <Grid
-        size={{ xs: 12, md: 6 }}
-        height={{ md: "85vh" }}
+        container
+        spacing={2}
+        size={12}
         sx={{
-          pl: { xs: 5, md: 10, lg: 20 },
-          pr: 5,
+          display: "flex",
+          justifyContent: "space-between",
         }}
       >
         <Grid
-          size={12}
+          size={{ xs: 12, md: 6 }}
+          height={{ md: "50vh" }}
           sx={{
-            display: "flex",
-            justifyContent: { xs: "center", md: "flex-start" },
+            pl: { xs: 5, md: 10, lg: 20 },
+            pr: 5,
           }}
         >
-          <Typography
+          <Grid
+            size={12}
             sx={{
-              fontFamily: "Roboto",
-              color: "white",
-              fontSize: { xs: "1.5rem", md: "2rem" },
+              display: "flex",
+              justifyContent: { xs: "center", md: "flex-start" },
             }}
           >
-            Experiance
-          </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Roboto",
+                color: "white",
+                fontSize: { xs: "1.5rem", md: "2rem" },
+              }}
+            >
+              Experiance
+            </Typography>
+          </Grid>
+          <Divider
+            sx={{
+              borderColor: "rgba(255,255,255,0.3)",
+              borderBottomWidth: "2px",
+              my: 1.5,
+            }}
+          />
+          <Grid
+            size={12}
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <Box>
+              <Typography
+                sx={{
+                  fontFamily: "Roboto",
+                  color: "white",
+                  fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                }}
+              >
+                Intern Software Engineer
+              </Typography>
+              <Typography
+                sx={{
+                  textAlign: "left",
+                  fontFamily: "Roboto",
+                  color: "grey",
+                  fontSize: { xs: ".5rem", md: "1.2rem" },
+                }}
+              >
+                mobiOS Private Ltd.
+              </Typography>
+            </Box>
+            <Box sx={{ alignContent: "center" }}>
+              <Typography
+                sx={{
+                  fontFamily: "Roboto",
+                  color: "white",
+                  fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                  p: 1,
+                  border: "1px solid white",
+                }}
+              >
+                Sep.2023 - March.2024
+              </Typography>
+            </Box>
+          </Grid>
         </Grid>
-        <Divider
-          sx={{
-            borderColor: "rgba(255,255,255,0.3)",
-            borderBottomWidth: "2px",
-            my: 1.5,
-          }}
-        />
         <Grid
-          size={12}
-          sx={{ display: "flex", justifyContent: "space-between" }}
+          size={{ xs: 12, md: 6 }}
+          height={{ md: "50vh" }}
+          sx={{
+            pr: { xs: 5, md: 10 },
+            pl: 5,
+          }}
         >
           <Box>
             <Typography
               sx={{
                 fontFamily: "Roboto",
                 color: "white",
-                fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                fontSize: { xs: "1.5rem", md: "2rem" },
               }}
             >
-              Intern Software Engineer
-            </Typography>
-            <Typography
-              sx={{
-                textAlign: "left",
-                fontFamily: "Roboto",
-                color: "grey",
-                fontSize: { xs: ".5rem", md: "1.2rem" },
-              }}
-            >
-              mobiOS Private Ltd.
+              Education
             </Typography>
           </Box>
-          <Box sx={{ alignContent: "center" }}>
-            <Typography
-              sx={{
-                fontFamily: "Roboto",
-                color: "white",
-                fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
-                p: 1,
-                border: "1px solid white",
-              }}
-            >
-              Sep.2023 - March.2024
-            </Typography>
-          </Box>
+          <Divider
+            sx={{
+              borderColor: "rgba(255,255,255,0.3)",
+              borderBottomWidth: "2px",
+              my: 1.5,
+            }}
+          />
+          <Grid
+            size={12}
+            sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}
+          >
+            <Box>
+              <Typography
+                sx={{
+                  fontFamily: "Roboto",
+                  textAlign: "left",
+                  color: "white",
+                  fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                }}
+              >
+                B.Sc.(Hons) in Information Technology
+              </Typography>
+              <Typography
+                sx={{
+                  textAlign: "left",
+                  fontFamily: "Roboto",
+                  color: "grey",
+                  fontSize: { xs: ".5rem", md: "1.2rem" },
+                }}
+              >
+                University of Kelaniya.
+              </Typography>
+            </Box>
+            <Box sx={{ alignContent: "center" }}>
+              <Typography
+                sx={{
+                  width: 150,
+                  textAlign: "center",
+                  fontFamily: "Roboto",
+                  color: "white",
+                  fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                  p: 1,
+                  border: "1px solid white",
+                }}
+              >
+                2021 - 2024
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid
+            size={12}
+            sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}
+          >
+            <Box>
+              <Typography
+                sx={{
+                  fontFamily: "Roboto",
+                  textAlign: "left",
+                  color: "white",
+                  fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                }}
+              >
+                Bachelor of Information Technology(BIT)
+              </Typography>
+              <Typography
+                sx={{
+                  textAlign: "left",
+                  fontFamily: "Roboto",
+                  color: "grey",
+                  fontSize: { xs: ".5rem", md: "1.2rem" },
+                }}
+              >
+                University of Colombo.
+              </Typography>
+            </Box>
+            <Box sx={{ alignContent: "center" }}>
+              <Typography
+                sx={{
+                  width: 150,
+                  textAlign: "center",
+                  fontFamily: "Roboto",
+                  color: "white",
+                  fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                  p: 1,
+                  border: "1px solid white",
+                }}
+              >
+                2022 - Present
+              </Typography>
+            </Box>
+          </Grid>
         </Grid>
       </Grid>
       <Grid
-        size={{ xs: 12, md: 6 }}
-        height={{ md: "85vh" }}
+        size={12}
+        height={{ md: "8vh" }}
         sx={{
-          pr: { xs: 5, md: 10 },
-          pl: 5,
+          mb:10,
+          pl: { xs: 5, md: 10, lg: 20 },
+           pr: { xs: 5, md: 10 },
+          display: "flex",
+          justifyContent: "flex-end" ,
         }}
       >
-        <Box>
-          <Typography
-            sx={{
-              fontFamily: "Roboto",
-              color: "white",
-              fontSize: { xs: "1.5rem", md: "2rem" },
-            }}
+        <Box sx={{ my: "10px" }}>
+          <a
+            href="/CV/Kavindu_Umayange.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", color: "inherit" }}
           >
-            Education
-          </Typography>
+            <Button
+              color="black"
+              variant="contained"
+              sx={{
+                background: "white",
+                height: { xs: "40px", sm: "50px" },
+                width: { xs: "150px", sm: "160px", md: "180px" },
+                // mx: { xs: "5px", sm: "20px", md: "50px" },
+              }}
+            >
+              Download CV
+              <VerticalAlignBottomIcon
+                sx={{ ml: "5px", display: { xs: "none", md: "flex" } }}
+              />
+            </Button>
+          </a>
         </Box>
-        <Divider
-          sx={{
-            borderColor: "rgba(255,255,255,0.3)",
-            borderBottomWidth: "2px",
-            my: 1.5,
-          }}
-        />
-        <Grid
-          size={12}
-          sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}
-        >
-          <Box>
-            <Typography
-              sx={{
-                fontFamily: "Roboto",
-                textAlign: "left",
-                color: "white",
-                fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
-              }}
-            >
-              B.Sc.(Hons) in Information Technology
-            </Typography>
-            <Typography
-              sx={{
-                textAlign: "left",
-                fontFamily: "Roboto",
-                color: "grey",
-                fontSize: { xs: ".5rem", md: "1.2rem" },
-              }}
-            >
-              University of Kelaniya.
-            </Typography>
-          </Box>
-          <Box sx={{ alignContent: "center" }}>
-            <Typography
-              sx={{
-                width: 150,
-                textAlign: "center",
-                fontFamily: "Roboto",
-                color: "white",
-                fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
-                p: 1,
-                border: "1px solid white",
-              }}
-            >
-              2021 - 2024
-            </Typography>
-          </Box>
-        </Grid>
-        <Grid
-          size={12}
-          sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}
-        >
-          <Box>
-            <Typography
-              sx={{
-                fontFamily: "Roboto",
-                textAlign: "left",
-                color: "white",
-                fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
-              }}
-            >
-              Bachelor of Information Technology(BIT)
-            </Typography>
-            <Typography
-              sx={{
-                textAlign: "left",
-                fontFamily: "Roboto",
-                color: "grey",
-                fontSize: { xs: ".5rem", md: "1.2rem" },
-              }}
-            >
-              University of Colombo.
-            </Typography>
-          </Box>
-          <Box sx={{ alignContent: "center" }}>
-            <Typography
-              sx={{
-                width: 150,
-                textAlign: "center",
-                fontFamily: "Roboto",
-                color: "white",
-                fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
-                p: 1,
-                border: "1px solid white",
-              }}
-            >
-              2022 - Present
-            </Typography>
-          </Box>
-        </Grid>
       </Grid>
     </Grid>
   );
