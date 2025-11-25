@@ -6,17 +6,18 @@ import ProjectCard from "./ProjectCard";
 import axios from "axios";
 
 function MultipleItems() {
+  const API = process.env.REACT_APP_BACKEND_URL;
     const [projects, setProjects] = useState([]);
     useEffect(()=>{
         try{
- axios.get("http://localhost:3001/projects").then(res=>{
+ axios.get(`${API}/projects`).then(res=>{
                     setProjects(res.data);
         })
         }catch(error){
             console.error(error)
         }
        
-    },[]);
+    },[API]);
   const settings = {
     dots: true,
     infinite: true,

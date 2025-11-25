@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Divider, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 function About() {
   return (

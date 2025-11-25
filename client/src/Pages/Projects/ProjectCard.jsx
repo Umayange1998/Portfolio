@@ -2,7 +2,6 @@ import React from "react";
 import Card from "@mui/material/Card";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import img from "../../Assets/portforlio.png";
 import { Box } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
@@ -48,9 +47,9 @@ function ProjectCard({ title, description, image, url, githubLink }) {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          height: "100%",
+      
           gap: 2,
-          justifyContent: "flex-start",
+         
         }}
       >
         <Box sx={{ height: 350 }}>

@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+
 import {
   Drawer,
   Box,
-  IconButton,
   List,
-  ListItem,
   ListItemText,
   ListItemButton,
   Button,
 } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
 
 export default function TopDrawer({ items, isOpenDrawer, handleClose }) {
   const handleItemClick = (item) => {
