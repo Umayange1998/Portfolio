@@ -81,7 +81,7 @@ function ResponsiveAppBar() {
             sx={{
               cursor: "pointer",
               mr: 2,
-              ml: { md: 10, lg: 20 },
+              ml: { md: 10, lg: 15 },
               display: { xs: "none", md: "flex" },
               fontFamily: "Sacramento",
               fontWeight: 700,
