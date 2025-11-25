@@ -39,7 +39,7 @@ function ProjectCard({ title, description, image, url, githubLink }) {
 
       <Box
         sx={{
-          // height: 400,
+          height: 450,
           position: "relative",
           zIndex: 3,
           padding: "20px",
@@ -70,7 +70,7 @@ function ProjectCard({ title, description, image, url, githubLink }) {
           </Box>
       
 
-        <Box mb={"100px"}>
+        <Box >
           {url && (
             <Button
               variant="outlined"

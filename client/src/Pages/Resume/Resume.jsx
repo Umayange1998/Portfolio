@@ -233,7 +233,7 @@ function Resume() {
           pl: { xs: 5, md: 10, lg: 20 },
            pr: { xs: 5, md: 10 },
           display: "flex",
-          justifyContent: "flex-end" ,
+             justifyContent: { xs: "center", md: "flex-end" },
         }}
       >
         <Box sx={{ my: "10px" }}>
