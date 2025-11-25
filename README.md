@@ -5,9 +5,10 @@ This portfolio showcases my skills, projects, experience, resume, and ways to co
 
 ## 🔗 Live Demo
 
-<a href="[https://umayange1998.github.io/personal-website/](https://umayange-gamachchi.netlify.app/)" target="_blank" rel="noopener noreferrer">
+<a href="https://umayange-gamachchi.netlify.app/" target="_blank" rel="noopener noreferrer">
   Visit Live Website
 </a>
+
 
 🚀 Features
 
