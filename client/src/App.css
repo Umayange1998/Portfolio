@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0e1419;
+}
+ .slick-slide>div {
+   margin: 0 27px;
+ }
+ #home,
+#skills,
+#projects,
+#about,
+#contact {
+  scroll-margin-top: 90px; /* same as AppBar height */
+}
+
+ 
