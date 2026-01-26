@@ -85,10 +85,50 @@ function Resume() {
                   fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
                 }}
               >
+                Associate Software Engineer
+              </Typography>
+              <Typography
+                sx={{
+                  textAlign: "left",
+                  fontFamily: "Roboto",
+                  color: "grey",
+                  fontSize: { xs: ".5rem", md: "1.2rem" },
+                }}
+              >
+                StudyAnything.
+              </Typography>
+            </Box>
+            <Box sx={{ alignContent: "center" }}>
+              <Typography
+                sx={{
+                  fontFamily: "Roboto",
+                  color: "white",
+                  fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                  p: 1,
+                  border: "1px solid white",
+                }}
+              >
+                Dec.2025 - Present
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid
+            size={12}
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <Box>
+              <Typography
+                sx={{
+                  fontFamily: "Roboto",
+                  color: "white",
+                  fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                }}
+              >
                 Intern Software Engineer
               </Typography>
               <Typography
                 sx={{
+                  minWidth: 200,
                   textAlign: "left",
                   fontFamily: "Roboto",
                   color: "grey",
@@ -101,6 +141,8 @@ function Resume() {
             <Box sx={{ alignContent: "center" }}>
               <Typography
                 sx={{
+                  minWidth: 200,
+                  textAlign: "center",
                   fontFamily: "Roboto",
                   color: "white",
                   fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
