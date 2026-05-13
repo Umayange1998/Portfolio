@@ -95,6 +95,45 @@ function Resume() {
                   fontSize: { xs: ".5rem", md: "1.2rem" },
                 }}
               >
+                Looper7 Solution.
+              </Typography>
+            </Box>
+            <Box sx={{ alignContent: "center" }}>
+              <Typography
+                sx={{
+                  fontFamily: "Roboto",
+                  color: "white",
+                  fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                  p: 1,
+                  border: "1px solid white",
+                }}
+              >
+                April.2024 - Aug.2025
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid
+            size={12}
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <Box>
+              <Typography
+                sx={{
+                  fontFamily: "Roboto",
+                  color: "white",
+                  fontSize: { xs: "1rem", md: "1rem", lg: "1.5rem" },
+                }}
+              >
+                Associate Software Engineer
+              </Typography>
+              <Typography
+                sx={{
+                  textAlign: "left",
+                  fontFamily: "Roboto",
+                  color: "grey",
+                  fontSize: { xs: ".5rem", md: "1.2rem" },
+                }}
+              >
                 StudyAnything.
               </Typography>
             </Box>
@@ -271,11 +310,11 @@ function Resume() {
         size={12}
         height={{ md: "8vh" }}
         sx={{
-          mb:10,
+          mb: 10,
           pl: { xs: 5, md: 10, lg: 20 },
-           pr: { xs: 5, md: 10 },
+          pr: { xs: 5, md: 10 },
           display: "flex",
-             justifyContent: { xs: "center", md: "flex-end" },
+          justifyContent: { xs: "center", md: "flex-end" },
         }}
       >
         <Box sx={{ my: "10px" }}>

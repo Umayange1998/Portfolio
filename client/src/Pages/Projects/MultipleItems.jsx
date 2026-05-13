@@ -7,8 +7,7 @@ function MultipleItems() {
   const API = process.env.REACT_APP_BACKEND_URL;
   const [projects, setProjects] = useState([]);
   const [width, setWidth] = useState(window.innerWidth);
-    const [mounted, setMounted] = useState(false);
-
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -26,12 +25,16 @@ function MultipleItems() {
       window.dispatchEvent(new Event("resize"));
     }, 150);
   }, [projects]);
-  
-   useEffect(() => {
+
+  useEffect(() => {
     const fetchProjects = async () => {
       try {
         const res = await axios.get(`${API}/projects`);
-        setProjects(res.data);
+        setProjects(
+          res.data.sort(
+            (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
+          ),
+        );
       } catch (error) {
         console.error("Fetch error:", error);
       }
