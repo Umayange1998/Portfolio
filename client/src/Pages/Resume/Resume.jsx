@@ -95,7 +95,7 @@ function Resume() {
                   fontSize: { xs: ".5rem", md: "1.2rem" },
                 }}
               >
-                Looper7 Solution.
+                StudyAnything.
               </Typography>
             </Box>
             <Box sx={{ alignContent: "center" }}>
@@ -108,7 +108,7 @@ function Resume() {
                   border: "1px solid white",
                 }}
               >
-                April.2024 - Aug.2025
+                Dec.2025 - Present
               </Typography>
             </Box>
           </Grid>
@@ -134,7 +134,7 @@ function Resume() {
                   fontSize: { xs: ".5rem", md: "1.2rem" },
                 }}
               >
-                StudyAnything.
+                Looper7 Solution.
               </Typography>
             </Box>
             <Box sx={{ alignContent: "center" }}>
@@ -147,10 +147,11 @@ function Resume() {
                   border: "1px solid white",
                 }}
               >
-                Dec.2025 - Present
+                April.2024 - Aug.2025
               </Typography>
             </Box>
           </Grid>
+
           <Grid
             size={12}
             sx={{ display: "flex", justifyContent: "space-between" }}
